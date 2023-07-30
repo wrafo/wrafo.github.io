@@ -18,6 +18,7 @@ export default {
       transparent: colors.transparent,
       black: '#222323',
       white: '#F0F6F0',
+      primaryGray: '#585B56',
       slate: colors.slate,
       gray: colors.gray,
       zinc: colors.zinc,
