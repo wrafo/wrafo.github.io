@@ -5,7 +5,19 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        move: {
+          '0%, 100%': { transform: 'translateX(0)'},
+          '50%': { transform: 'translateX(100%)' },
+          '51%': { transform: 'translateX(100%) rotateY(180deg)' },
+          '90%': { transform: 'translateX(-100%) rotateY(180deg)' },
+        }
+      },
+      animation: {
+        'moving': 'move 10s linear infinite',
+      }
+    },
     accentColor: ({ theme }) => ({
       ...theme('colors'),
       auto: 'auto',
